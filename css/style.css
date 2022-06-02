@@ -1,0 +1,81 @@
+html{
+	font-size: 62.5%  /* 62.5% == 10px*/;
+	box-sizing: border-box;
+}
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* estilos genereales */
+.cards{
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+}
+.card{
+    width: 30rem;
+    height: 35rem;
+    padding: 3rem;
+    background-color: rgb(224, 77, 1);
+    border-radius: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3),
+                -4px 0 10px rgba(0, 0, 0, 0.2),
+                -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+.card:hover{
+    margin-right: 8rem;
+    transform: rotate(3deg) translateY(-15px);
+}
+[class*= "card--"]{
+    margin-left: -10rem;
+}
+.card__header{
+    flex: 1;
+}
+.card__title{
+    font-size: 2.8rem;
+}
+.card__date{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.card a{
+    text-decoration: none;
+    color: yellow;
+}
+.card a:hover{
+    color: lightyellow;
+}
+.card--2:hover, .card--3:hover{
+    margin-left: -13rem;
+}
+.card--2{
+    background-color: rgb(37, 29, 58);
+}
+.card--3{
+    background-color: rgb(42, 37, 80);
+}
+.card--4{
+    background-color: rgb(255, 119, 0);
+}
+.card__autor a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card__autor span{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.card__autor img{
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+}
